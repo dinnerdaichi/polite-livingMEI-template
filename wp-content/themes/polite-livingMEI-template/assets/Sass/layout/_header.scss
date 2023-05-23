@@ -1,0 +1,20 @@
+@use "../foundation/mixin" as m;
+@use "../foundation/variable" as v;
+
+
+.l-header{
+
+&__content{
+  text-align: center;
+
+}
+
+&__list{
+  display: flex;
+  justify-content: space-between;
+}
+
+}
+
+
+
