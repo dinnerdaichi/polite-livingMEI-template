@@ -1,14 +1,29 @@
 /*--------------------------------------*
   * foundation
-  *--------------------------------------*/
+*--------------------------------------*/
 @use "./foundation/reset";
 @use "./foundation/variable";
 @use "./foundation/base";
 
 
 
- /*--------------------------------------*
+/*--------------------------------------*
     * layout
-    *--------------------------------------*/
- @use "./layout/header"; 
- @use "./layout/responsive";
+*--------------------------------------*/
+@use "./layout/header";
+@use "./layout/responsive";
+
+
+
+/*--------------------------------------*
+    * object
+*--------------------------------------*/
+/*--------------------------------------*
+    * component
+*--------------------------------------*/
+
+@use "./object/component/inner";
+@use "./object/component/section";
+@use "./object/project/fv";
+@use "./object/project/concept";
+@use "./object/project/service";

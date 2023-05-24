@@ -1,0 +1,16 @@
+.c-section{
+
+  padding: 130px 0;
+  text-align: center;
+
+
+  &__title{
+    font-size: 4.8rem;
+  }
+
+  &__sub-title{
+    display: block;
+    font-size: 2rem;
+    margin-top: 20px;
+  }
+}

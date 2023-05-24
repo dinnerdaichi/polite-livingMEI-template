@@ -1,0 +1,58 @@
+.p-concept {
+  text-align: center;
+  position: relative;
+  z-index: 999;
+
+  &__title{
+    font-size: 3.2rem;
+  }
+
+  // &::before{
+  //   content: "";
+  //   position: absolute;
+  //   width: 100%;
+  //   height: 100%;
+  //   background-image: url(/wp-content/themes/polite-livingMEI-template/assets/img/concept-before.png);
+  //   background-size: contain;
+  //   top: -98px;
+  //   z-index: 999;
+  //   display: block;
+
+
+  // }
+
+
+  &__box{
+    width: 60%;
+  }
+
+  &__flex {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__before-img {
+    background-image: url(/wp-content/themes/polite-livingMEI-template/assets/img/decoration1.png);
+    background-size: contain;
+    width: 20%;
+    height: 200px;
+    transform: scale(-1,-1);
+  }
+  &__after-img {
+    background-image: url(/wp-content/themes/polite-livingMEI-template/assets/img/decoration1.png);
+    background-size: contain;
+    width: 20%;
+    height: 200px;
+  }
+
+  &__content{
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 36px;
+
+  }
+
+
+
+
+}

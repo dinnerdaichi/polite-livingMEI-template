@@ -321,10 +321,49 @@ progress {
   cursor: default;
 }
 
-body {
-  color: #555555;
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  color: red;
+}
+
+body {
+  color: #555555;
+  font-size: 1.6rem;
+  width: 100%;
+  overflow-x: hidden;
+  background-color: #FFFCFA;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border: none;
+  display: block;
+}
+
+a {
+  color: #555555;
+  text-decoration: none;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+li {
+  list-style: none;
+}
+
+.l-header {
+  position: relative;
+  z-index: 999;
+}
 .l-header__content {
   text-align: center;
 }
@@ -332,18 +371,164 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 20px;
+}
+.l-header__list-item {
+  margin-right: 55px;
+}
+.l-header__list-item:last-child {
+  margin-right: 0;
+}
+.l-header__logo {
+  width: 226px;
+  margin: 0 auto;
+  padding-top: 40px;
 }
 
 header {
   color: red;
 }
 
+.c-inner {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 10px 30px;
+}
+
+.c-section {
+  padding: 130px 0;
+  text-align: center;
+}
+.c-section__title {
+  font-size: 4.8rem;
+}
+.c-section__sub-title {
+  display: block;
+  font-size: 2rem;
+  margin-top: 20px;
+}
+
+.p-fv {
+  position: relative;
+}
+.p-fv::before {
+  content: "";
+  background-image: url(/wp-content/themes/polite-livingMEI-template/assets/img/head-after.png);
+  background-size: contain;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100px;
+  display: block;
+}
+.p-fv::after {
+  content: "";
+  background-image: url(/wp-content/themes/polite-livingMEI-template/assets/img/concept-before.png);
+  background-size: contain;
+  position: absolute;
+  top: -550px;
+  width: 100%;
+  height: 100px;
+  display: block;
+}
+.p-fv img {
+  width: 100%;
+  height: auto;
+}
+
+.p-concept {
+  text-align: center;
+  position: relative;
+  z-index: 999;
+}
+.p-concept__title {
+  font-size: 3.2rem;
+}
+.p-concept__box {
+  width: 60%;
+}
+.p-concept__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.p-concept__before-img {
+  background-image: url(/wp-content/themes/polite-livingMEI-template/assets/img/decoration1.png);
+  background-size: contain;
+  width: 20%;
+  height: 200px;
+  -webkit-transform: scale(-1, -1);
+          transform: scale(-1, -1);
+}
+.p-concept__after-img {
+  background-image: url(/wp-content/themes/polite-livingMEI-template/assets/img/decoration1.png);
+  background-size: contain;
+  width: 20%;
+  height: 200px;
+}
+.p-concept__content {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 36px;
+}
+
+.p-service {
+  background-color: #F9F1F5;
+}
+.p-service__lists {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 120px;
+}
+.p-service__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 33%;
+  max-width: 256px;
+}
+.p-service__list h3 {
+  font-size: 3.2rem;
+}
+.p-service__list img {
+  margin-top: 40px;
+}
+.p-service__list p {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.p-service__button {
+  background-color: #FFFCFA;
+  padding: 6px 32px;
+  width: 100%;
+  border-radius: 30px;
+  display: block;
+  margin-top: auto;
+}
+
 /*--------------------------------------*
   * foundation
-  *--------------------------------------*/
+*--------------------------------------*/
 /*--------------------------------------*
-   * layout
-   *--------------------------------------*/
+    * layout
+*--------------------------------------*/
+/*--------------------------------------*
+    * object
+*--------------------------------------*/
+/*--------------------------------------*
+    * component
+*--------------------------------------*/
