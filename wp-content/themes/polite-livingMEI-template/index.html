@@ -7,14 +7,56 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>politelivingMEI</title>
   <link rel="stylesheet" href="./assets/CSS/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <script>new WOW().init();</script>
+<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+<script src="./assets/JS/script.js"></script>
 </head>
 
 <body>
 
+        <div class="nav-back"></div>
 
 
 
   <header class="l-header">
+    <div id="fixed-header">
+      <div class="fixed-header__flex">
+        <div class="fixed-header__logo">
+          <img src="./assets/img/mv_logo.png" alt="">
+        </div>
+        <ul class="fixed__nav">
+          <li><a href="#service">サービス内容</a></li>
+          <li><a href="#area">対応エリア</a></li>
+          <li><a href="#price">料金</a></li>
+          <li><a href="#profile">自己紹介</a></li>
+          <li><a href="#contact">お問い合わせ</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="openbtn1"><span></span><span></span><span></span></div>
+
+
+    <div id="fixed-s-header">
+      <div class="fixed-s-header__flex">
+        <!-- <div class="fixed-s-header__logo">
+          <img src="./assets/img/mv_logo.png" alt="">
+        </div> -->
+        <ul class="fixed__s-nav">
+          <li class="links"><a href="#service">サービス内容</a></li>
+          <li class="links"><a href="#area">対応エリア</a></li>
+          <li class="links"><a href="#price">料金</a></li>
+          <li class="links"><a href="#profile">自己紹介</a></li>
+          <li class="links"><a href="#contact">お問い合わせ</a></li>
+        </ul>
+      </div>
+    </div>
+
+
+
+
     <div class="c-inner">
       <div class="l-header__content">
         <div class="l-header__logo">
@@ -24,19 +66,19 @@
         <div class="l-header__nav">
           <ul class="l-header__list">
             <li class="l-header__list-item">
-              <a href="">サービス内容</a>
+              <a href="#service">サービス内容</a>
             </li>
             <li class="l-header__list-item">
-              <a href="">対応エリア</a>
+              <a href="#area">対応エリア</a>
             </li>
             <li class="l-header__list-item">
-              <a href="">料金</a>
+              <a href="#price">料金</a>
             </li>
             <li class="l-header__list-item">
-              <a href="">自己紹介</a>
+              <a href="#profile">自己紹介</a>
             </li>
             <li class="l-header__list-item">
-              <a href="">お問い合わせ</a>
+              <a href="#contact">お問い合わせ</a>
             </li>
           </ul>
         </div>
@@ -49,7 +91,15 @@
   <main>
 
     <section class="p-fv">
-      <img src="./assets/img/mv.jpg" alt="">
+      <div class="p-fv__img">
+        <img src="./assets/img/mv.jpg" alt="">
+        <div class="ab">
+          <img src="./assets/img/wave-item1.png" alt="" class="before">
+        </div>
+        <div class="bo">
+          <img src="./assets/img/wave-item2.png" alt="" class="before">
+        </div>
+      </div>
     </section>
 
 
@@ -60,12 +110,10 @@
           <div class="p-concept__before-img">
           </div>
           <div class="p-concept__box">
-            <h2 class="c-section__title p-concept__title">
-              「ほんの少しのていねいな暮らしで心穏やかに」
-            </h2>
+            <h2 class="c-section__title p-concept__title">ほんの少しの<br class="sp_display-none">ていねいな暮らしで<br class="sp_display-none">心穏やかに</h2>
             <div class="p-concept__content">
               <p>小さなお子様がいるママ、産後のママ、単身赴任の方、ご高齢家族、家事が苦手な方、お身体が不自由な方テキストテキストテキスト</p>
-              <a href="" class="c-button">politelivingの想い</a>
+              <a href="page-concept.html" class="c-button2 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s"><span>politelivingの想い</span></a>
             </div>
           </div>
           <div class="p-concept__after-img"></div>
@@ -79,85 +127,94 @@
 
 
 
-    <section class="p-service c-section">
+    <section id="service" class="p-service c-section">
       <div class="c-inner">
-        <h2 class="c-section__title">サービス内容<span class="c-section__sub-title">service</span></h2>
+        <h2 class="c-section__title animate__slower wow fadeIn" data-wow-duration="3s">サービス内容<span class="c-section__sub-title">service</span></h2>
         <div class="p-service__content">
           <ul class="p-service__lists">
-            <li class="p-service__list">
+            <li class="p-service__list wow fadeInLeft" data-wow-delay=".4s">
               <h3>家事代行</h3>
               <img src="./assets/img/service-list1.png" alt="">
               <p>テキストテキストテキストテキストテキスト</p>
               <a href="" class="p-service__button">詳しくはコチラ</a>
             </li>
-            <li class="p-service__list">
+            <li class="p-service__list wow fadeInLeft" data-wow-delay=".6s">
               <h3>整理整頓</h3>
               <img src="./assets/img/service-list2.png" alt="">
               <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
               <a href="" class="p-service__button">詳しくはコチラ</a>
             </li>
-            <li class="p-service__list">
+            <li class="p-service__list wow fadeInLeft" data-wow-delay=".8s">
               <h3>セミナー開催依頼</h3>
               <img src="./assets/img/service-list3.png" alt="">
               <p>テキストテキストテキストテキストテキスト</p>
               <a href="" class="p-service__button">詳しくはコチラ</a>
             </li>
           </ul>
-          <a href="" class="c-button">お気軽にご相談ください</a>
+          <a href="" class="c-button wow fadeInUp"data-wow-duration="1s" data-wow-delay=".3s"><span>お気軽にご相談ください</span></a>
         </div>
       </div>
     </section>
 
-    <section class="p-area c-section">
-      <div class="c-inner">
-        <h2 class="c-section-title">サービス提供エリア<span class="c-section__sub-title">AREA</span></h2>
+    <section id="area" class="p-area c-section">
+      <div class="c-inner wow fadeIn" data-wow-duration="3s">
+        <h2 class="c-section__title">サービス提供エリア<span class="c-section__sub-title">AREA</span></h2>
         <div class="p-area__content">
-          <img src="" alt="">
+          <img src="./assets/img/shizuoka.png" alt="">
           <p>静岡県全域にお伺いします。</p>
         </div>
       </div>
     </section>
 
-    <section class="p-price c-section">
-      <div class="c-inner">
+
+
+
+
+
+    <section id="price" class="p-price c-section">
+      <div class="c-inner wow fadeIn"data-wow-duration="3s">
         <h2 class="c-section__title">料金について<span class="c-section__sub-title">PRICE</span></h2>
         <div class="p-price__content">
           <p>各プランの料金一覧・お支払い方法はこちらからご確認ください。</p>
-          <a href="" class="c-button">料金を確認する</a>
+          <a href="page-price.html" class="c-button wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s"><span>料金を確認する</span></a>
         </div>
 
       </div>
     </section>
 
-    <section class="p-profile c-section">
+
+
+
+
+
+    <section id="profile" class="p-profile c-section wow fadeIn"data-wow-duration="3s">
       <div class="c-inner">
         <h2 class="c-section__title">自己紹介<span class="c-section__sub-title">PROFILE</span></h2>
         <div class="p-profile__flex">
           <div class="p-profile__img">
-            <img src="" alt="">
+            <img src="./assets/img/profile.png" alt="">
           </div>
           <div class="p-profile__content">
             <div class="p-profile__content-name">
-              <p></p>
-              <p></p>
+              <p>株式会社politeliving</p>
+              <p>代表：藤田美枝子（MEI）</p>
             </div>
             <div class="p-profile__content-info">
-              <p></p>
+              <p>【保有資格】終活アドバイザー/遺品整理士/整理収納アドバイザー/2級FP技能士 テキストテキストテキストテキスト</p>
             </div>
-            <a href="" class="c-button">ブログをチェック</a>
+            <a href="https://politeliving2022.com/" class="c-button2 wow fadeInUp" target="_blank"data-wow-duration="1s" data-wow-delay=".3s"><span>ブログをチェック</span></a>
           </div>
         </div>
       </div>
 
     </section>
 
-    <section class="p-contact c-section">
+    <section id="contact" class="p-contact c-section wow fadeIn" data-wow-duration="3s">
       <div class="c-inner">
         <h2 class="c-section__title">お問い合わせ<span class="c-section__sub-title">CONTACT</span></h2>
-
         <div class="p-contact__content">
           <p>テキストテキストテキストテキスト</p>
-          <a href="" class="c-button">お問い合わせをする</a>
+          <a href="page-contact.html" class="c-button wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s"><span>お問い合わせをする</span></a>
         </div>
       </div>
     </section>
@@ -166,36 +223,38 @@
   </main>
 
 
-
-
-
   <footer class="l-footer">
+    <div class="l-footer__wave-item wow fadeIn" data-wow-duration="1s" data-wow-delay=".3s">
+      <img src="./assets/img/wave-item3.png" alt="">
+    </div>
     <div class="c-inner">
       <div class="l-footer__content">
+        <a href="#" class="c-button2 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s"><span>トップに戻る</span></a>
         <ul class="l-footer__list">
           <li>
-            <a href=""></a>
+            <a href="#">TOP</a>
           </li>
           <li>
-            <a href=""></a>
+            <a href="#service">サービス内容</a>
           </li>
           <li>
-            <a href=""></a>
+            <a href="#area">対応エリア</a>
           </li>
           <li>
-            <a href=""></a>
+            <a href="#price">料金</a>
           </li>
           <li>
-            <a href=""></a>
+            <a href="profile">自己紹介</a>
           </li>
           <li>
-            <a href=""></a>
+            <a href="#contact">お問い合わせ</a>
           </li>
         </ul>
-        <small class="l-footer__copyright"></small>
+        <small class="l-footer__copyright">© Copyright 2023politeliving .</small>
       </div>
     </div>
   </footer>
+
 
 
 

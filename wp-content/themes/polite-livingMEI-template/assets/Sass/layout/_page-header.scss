@@ -2,7 +2,7 @@
 @use "../foundation/variable" as v;
 
 
-.l-header{
+.l-page-header {
   // position: sticky;
   // z-index: 999;
   // width: 100%;
@@ -21,33 +21,29 @@
   // }
   position: relative;
 
-&__content{
-  text-align: center;
+  &__content {
+    text-align: center;
+    padding-bottom: 40px;
 
-}
+  }
 
-&__list{
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
+  &__list {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 
-  &-item{
-    margin-right: 55px;
+    &-item {
+      margin-right: 55px;
 
-    &:last-child{
-      margin-right: 0;
+      &:last-child {
+        margin-right: 0;
+      }
     }
   }
 
-  @include m.mq(sp){
-     display: none;
+  &__logo {
+    width: 226px;
+    margin: 0 auto;
+    padding-top: 40px;
   }
 }
-
-&__logo{
-  width: 226px;
-  margin: 0 auto;
-  padding-top: 40px;
-}
-}
-

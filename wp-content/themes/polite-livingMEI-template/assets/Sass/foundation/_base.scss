@@ -1,4 +1,6 @@
 @use './variable' as v;
+@use "../foundation/mixin" as m;
+@import url('https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@500&display=swap');
 
 
 *,
@@ -10,7 +12,12 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
+  scroll-padding-top: 80px;
   color: red;
+
+  @include m.mq(sp){
+     scroll-padding-top: 0px;
+  }
 }
 
 
@@ -20,6 +27,7 @@ body {
   width: 100%;
   overflow-x: hidden;
   background-color: v.$color-base;
+  font-family: 'Zen Old Mincho', serif;
 }
 
 
@@ -33,8 +41,11 @@ img {
 a {
   color: v.$color-black;
   text-decoration: none;
-  transition: 0.4s;
+  transition: 0.7s;
 
+  &:hover{
+    opacity: 0.8;
+  }
 }
 
 li{

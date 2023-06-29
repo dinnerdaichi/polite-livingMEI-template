@@ -4,6 +4,7 @@
 @use "./foundation/reset";
 @use "./foundation/variable";
 @use "./foundation/base";
+@use "./foundation/js";
 
 
 
@@ -11,7 +12,9 @@
     * layout
 *--------------------------------------*/
 @use "./layout/header";
+@use "./layout/footer";
 @use "./layout/responsive";
+@use "./layout/page-header";
 
 
 
@@ -24,6 +27,14 @@
 
 @use "./object/component/inner";
 @use "./object/component/section";
+@use "./object/component/button";
+
 @use "./object/project/fv";
 @use "./object/project/concept";
 @use "./object/project/service";
+@use "./object/project/area";
+@use "./object/project/price";
+@use "./object/project/profile";
+@use "./object/project/contact";
+
+@use "./object/project/page-price";

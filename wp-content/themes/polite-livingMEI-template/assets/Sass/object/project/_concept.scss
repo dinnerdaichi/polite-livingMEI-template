@@ -1,10 +1,15 @@
+@use "../../foundation/mixin" as m;
+
 .p-concept {
+
   text-align: center;
   position: relative;
-  z-index: 999;
+  z-index: 800;
+
+
 
   &__title{
-    font-size: 3.2rem;
+    font-size: 3rem;
   }
 
   // &::before{
@@ -24,11 +29,20 @@
 
   &__box{
     width: 60%;
+
+    @include m.mq(sp){
+       width: 90%;
+       margin: 0 auto;
+    }
   }
 
   &__flex {
     display: flex;
     justify-content: center;
+
+    @include m.mq(sp){
+       display: block;
+    }
   }
 
   &__before-img {
@@ -37,18 +51,32 @@
     width: 20%;
     height: 200px;
     transform: scale(-1,-1);
+
+    @include m.mq(sp){
+       height: 60px;
+    }
   }
   &__after-img {
     background-image: url(/wp-content/themes/polite-livingMEI-template/assets/img/decoration1.png);
     background-size: contain;
     width: 20%;
     height: 200px;
+
+    @include m.mq(sp){
+       margin-left: auto;
+       height: 60px;
+    }
   }
 
   &__content{
-    width: 50%;
+    width: 80%;
     margin: 0 auto;
     margin-top: 36px;
+    text-align: left;
+
+    @include m.mq(sp){
+       width: 90%;
+    }
 
   }
 
@@ -56,3 +84,13 @@
 
 
 }
+ .sp_display-none {
+   display: none;
+
+
+  @include m.mq(sp) {
+        display: block;
+
+    }
+ }
+

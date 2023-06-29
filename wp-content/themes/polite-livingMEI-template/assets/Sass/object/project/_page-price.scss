@@ -1,0 +1,71 @@
+@use "./../../foundation/variable" as v;
+
+.table {
+  width: 100%;
+  border-top: solid 2px v.$color-black;
+  border-bottom: solid 2px v.$color-black;
+  border-collapse: collapse;
+  background: #fff;
+  font-size: 2.8rem;
+}
+
+@media screen and (max-width: 768px) {
+  .table {
+    font-size: 12px;
+  }
+}
+
+// .table-Head-Row {
+//   border-top: solid 2px v.$color-black;
+//   border-bottom: solid 2px v.$color-black;
+// }
+
+// .table-Head-Row.border-right{
+//     border-top: solid 2px rgb(190, 190, 190);
+//       border-bottom: solid 2px rgb(190, 190, 190);
+// }
+
+
+.table-Head-Row-Cell {
+  padding-top: 0.75em;
+  padding-bottom: 0.75em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+border-bottom: solid 2px rgb(122 122 122);
+}
+
+.table-Body-Row-Cell.bottom{
+border-bottom: solid 2px rgb(122 122 122);
+}
+
+.table-Body-Row-Cell.bottom.border-right{
+border-bottom: solid 2px rgb(122 122 122);
+}
+
+
+.table-Body-Row.bottom{
+border-bottom: solid 2px rgb(122 122 122);
+}
+
+
+// .table-Body-Row {
+//   border-top: solid 2px rgb(190, 190, 190);
+//   border-bottom: solid 2px rgb(218, 218, 218);
+// }
+
+// .table-Body-Row.border-top{
+//   border-top: solid 2px rgb(190, 190, 190);
+// }
+
+.border-right{
+  border-right: 1px solid rgb(190, 190, 190);
+}
+
+.table-Body-Row-Cell {
+  padding-top: 0.75em;
+  padding-bottom: 0.75em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  border-top: solid 2px rgb(190, 190, 190);
+    border-bottom: solid 2px rgb(218, 218, 218);
+}
