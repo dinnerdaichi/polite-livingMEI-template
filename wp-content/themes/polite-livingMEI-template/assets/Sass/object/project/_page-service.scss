@@ -1,7 +1,7 @@
-@use "./../../foundation/variable" as v;
+@use "../../foundation/variable" as v;
 @use "../../foundation/mixin" as m;
 
-.p-service {
+.p-page-service {
 
   background-color: v.$color-pink;
 
@@ -13,9 +13,9 @@
     margin-top: 100px;
     margin-bottom: 80px;
 
-    @include m.mq(sp){
-       display: block;
-       margin-top: 50px;
+    @include m.mq(sp) {
+      display: block;
+      margin-top: 50px;
     }
 
   }
@@ -28,13 +28,13 @@
     background-color: v.$color-base;
     padding: 80px 10px;
     border-radius: 30px;
-    box-shadow: 5px 10px 15px  #d4cdd0;
+    box-shadow: 5px 10px 15px #d4cdd0;
 
-    @include m.mq(sp){
-       width: 100%;
-       margin: 0;
-       max-width: 100%;
-       padding: 40px 10px;
+    @include m.mq(sp) {
+      width: 100%;
+      margin: 0;
+      max-width: 100%;
+      padding: 40px 10px;
       margin-bottom: 20px;
     }
 
@@ -59,9 +59,9 @@
     img {
       margin-top: 40px;
 
-      @include m.mq(sp){
-         width: 50%;
-         margin: 30px auto;
+      @include m.mq(sp) {
+        width: 50%;
+        margin: 30px auto;
       }
     }
 
@@ -72,9 +72,9 @@
       padding: 0 10px;
       line-height: 2.5rem;
 
-      @include m.mq(sp){
-         margin-top: 0;
-         text-align: center;
+      @include m.mq(sp) {
+        margin-top: 0;
+        text-align: center;
       }
     }
 
@@ -92,8 +92,8 @@
     background-color: v.$color-base;
 
 
-    @include m.mq(sp){
-       width: 60%;
+    @include m.mq(sp) {
+      width: 60%;
     }
   }
 
