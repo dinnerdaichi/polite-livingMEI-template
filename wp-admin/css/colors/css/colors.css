@@ -736,16 +736,16 @@ div#wp-responsive-toggle a:before {
 
 [class*=welcome-panel-icon] {
   background-color: #096484;
-}elcome-panel {
-  background-color: #be3631;
+}elcome Panel */
+.welcome-panel {
+  background-color: #26292c;
 }
 
 .welcome-panel-header-image .curve,
 .welcome-panel-header-image .dot {
-  fill: #cf4944;
+  fill: #3b464b;
 }
 
 [class*=welcome-panel-icon] {
-  background-color: #cf4944;
-}-color: #3b464b;
+  background-color: #3b464b;
 }

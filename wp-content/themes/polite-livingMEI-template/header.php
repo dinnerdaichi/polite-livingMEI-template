@@ -28,6 +28,7 @@
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/mv_logo.png" alt="">
         </div>
         <ul class="fixed__nav">
+          <li><a href="<?php echo esc_url(home_url());?>">トップページ</a></li>
           <li><a href="#service">サービス内容</a></li>
           <li><a href="#area">対応エリア</a></li>
           <li><a href="#price">料金</a></li>
